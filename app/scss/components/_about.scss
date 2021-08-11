@@ -1,0 +1,14 @@
+.about {
+
+  @include r ($desktop) {
+    padding: 90px 0;
+  }
+
+  @include r ($tablet-large) {
+    padding: 70px 0;
+  }
+
+  &__text p:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

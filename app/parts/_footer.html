@@ -1,0 +1,64 @@
+<footer class="footer">
+  <div class="container">
+    <h2 class="title">Контакты</h2>
+    <div class="footer__inner d-flex f-jcsb">
+      <div class="footer__content">
+        <address class="footer__address">
+          <div class="footer__text">
+            <p>
+              Связаться со мной можно, воспользовавшись контактной формой или
+              напрямую по номеру телефона, email, в соцсетях:
+            </p>
+          </div>
+          <div class="footer__phone">
+            <a class="footer__link" href="tel:+380501111111">+38 (050) 111 11 11</a>
+          </div>
+          <div class="footer__email">
+            <a class="footer__link" href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
+          </div>
+        </address>
+        <ul class="social">
+          <li class="social__icon">
+            <span class="sr-only">instagram</span>
+            <a class="social__link social__link--instagram" href="#"></a>
+          </li>
+          <li class="social__icon">
+            <span class="sr-only">facebook</span>
+            <a class="social__link social__link--facebook" href="#"></a>
+          </li>
+          <li class="social__icon">
+            <span class="sr-only">telegram</span>
+            <a class="social__link social__link--telegram" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <form class="form" action="#" method="post">
+        <div class="form__container d-flex f-jcsb">
+          <label class="form__label">
+            Ваше имя
+            <span class="sr-only">Ваше имя</span>
+            <input class="form__input" type="text" name="form[fullname]" placeholder="Иван" required>
+          </label>
+          <label class="form__label">
+            Номер телефона
+            <span class="sr-only">Номер телефона</span>
+            <input class="form__input" type="tel" name="form[phone]" placeholder="+380501111111" required>
+          </label>
+        </div>
+        <label class="form__label">
+          Ваше сообщение
+          <span class="sr-only">Ваше сообщение</span>
+          <textarea class="form__input form__input--textarea" name="form[message]""
+            placeholder=" Текст вашего сообщения" required></textarea>
+        </label>
+        <button class="form__btn btn" name="submit" type="submit">Отправить</button>
+      </form>
+    </div>
+
+  </div>
+  <div class="footer__bottom">
+    <a class="logo" href="#">
+      <img class="logo__icon" src="images/logo.svg" alt="лого сайта">
+    </a>
+  </div>
+</footer>

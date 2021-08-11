@@ -1,0 +1,111 @@
+.skills {
+  background-color: $grey-bg;
+
+  @include r ($desktop) {
+    padding: 90px 0;
+  }
+
+  @include r ($tablet-large) {
+    padding: 70px 0;
+  }
+
+  &__inner {
+    @include r ($tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__photo {
+    max-width: 415px;
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+
+    @include r ($tablet) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__list {
+    max-width: 665px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 86px;
+  }
+
+  &__item {
+    font-weight: 600;
+  }
+
+  &__elem {
+    text-transform: uppercase;
+    margin-right: 20px;
+
+    @include r ($mobile) {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+  }
+
+  &__line {
+    background-color: $grey;
+    height: 33px;
+    width: 600px;
+    position: relative;
+
+    @include r ($desktop) {
+      width: 400px;
+    }
+
+    @include r ($mobile) {
+      width: 250px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 33px;
+      height: 100%;
+      background-color: $blue;
+    }
+
+    &--first:after {
+      width: 512px;
+
+      @include r ($desktop) {
+        width: 360px;
+      }
+
+      @include r ($mobile) {
+        width: 220px;
+      }
+    }
+
+    &--second:after {
+      width: 472px;
+
+      @include r ($desktop) {
+        width: 300px;
+      }
+
+      @include r ($mobile) {
+        width: 190px;
+      }
+    }
+
+    &--third:after {
+      width: 385px;
+
+      @include r ($desktop) {
+        width: 190px;
+      }
+
+      @include r ($mobile) {
+        width: 160px;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.works {
+  text-align: center;
+  padding-bottom: 140px;
+
+  @include r ($desktop) {
+    padding-bottom: 90px;
+  }
+
+  @include r ($tablet-large) {
+    padding-bottom: 70px;
+  }
+
+  &__container {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    @include r ($desktop) {
+      justify-content: center;
+    }
+  }
+
+  &__buttons {
+    margin: 0 auto 60px;
+    justify-content: center;
+
+    @include r ($tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+
+    @include r ($tablet) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-bottom: 45px;
+
+    @include r ($desktop) {
+      margin: 0 20px 40px;
+    }
+
+    @include r ($tablet) {
+      margin: 0 5px 40px;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    font-size: 24px;
+    font-weight: 600;
+
+    @include r ($mobile) {
+      font-size: 22px;
+    }
+
+    &:focus {
+      color: rgb(59, 59, 214);
+    }
+
+    &:hover {
+      color: rgb(11, 11, 214);
+    }
+  }
+
+  .mixitup-control-active {
+    color: $blue;
+  }
+}

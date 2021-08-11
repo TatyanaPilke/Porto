@@ -1,0 +1,58 @@
+.services {
+
+  @include r ($desktop) {
+    padding: 90px 0;
+  }
+
+  @include r ($tablet-large) {
+    padding: 70px 0;
+  }
+
+  &__list {
+
+    @include r ($tablet) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    max-width: 330px;
+    padding-top: 90px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 60px 60px;
+
+    @include r ($tablet) {
+      margin: 0 20px 40px;
+      background-position: top;
+    }
+
+    &--code {
+      background-image: url(../images/code-icon.svg);
+    }
+
+    &--dev {
+      background-image: url(../images/dev-icon.svg);
+    }
+
+    &--chat {
+      background-image: url(../images/chat-icon.svg);
+    }
+  }
+
+  &__heading {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 28px;
+
+    @include r ($tablet) {
+     font-size: 22px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+}

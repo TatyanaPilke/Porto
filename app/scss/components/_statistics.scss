@@ -1,0 +1,64 @@
+.statistics {
+
+  @include r ($desktop) {
+    padding: 90px 0;
+  }
+
+  @include r ($tablet-large) {
+    padding: 70px 0;
+  }
+
+  @include r ($mobile) {
+    padding-bottom: 40px;
+  }
+
+  &__inner {
+
+    @include r ($desktop) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    padding: 150px 0 40px;
+    max-width: 280px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    background-size: 80px 80px;
+    background-color: $grey-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include r ($desktop) {
+      margin: 0 20px 40px
+    }
+   
+
+    &--works {
+      background-image: url(../images/works.svg);
+      background-size: 97px;
+    }
+
+    &--client {
+      background-image: url(../images/clients.svg);
+      background-size: 92px;
+    }
+
+    &--coffee {
+      background-image: url(../images/coffee.svg);
+    }
+
+    &--reviews {
+      background-image: url(../images/review.svg);
+    }
+  }
+
+  &__num {
+    font-size: 44px;
+    font-weight: 600;
+  }
+}
