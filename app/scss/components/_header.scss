@@ -37,11 +37,15 @@
     z-index: 3;
   }
 
-  &__title {
+  &__content {
+    color: $white;
+  }
+
+  &__subtitle {
+    display: block;
     max-width: 600px;
     font-weight: 700;
     font-size: 90px;
-    color: $white;
 
     @include r ($tablet) {
       font-size: 60px;
@@ -56,8 +60,7 @@
     }
   }
 
-  &__subtitle {
-    display: block;
+  &__title {
     font-weight: 400;
     font-size: 48px;
 
@@ -78,6 +81,11 @@
     margin: 0 auto 100px;
     font-weight: 600;
     color: $white;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $blue;
+    }
 
     &:after {
       content: '';
@@ -223,7 +231,7 @@
       font-weight: 600;
       padding-bottom: 5px;
       transition: border-bottom-color 0.5s;
-      border-bottom: 1px solid transparent;
+      border-bottom: 2px solid transparent;
 
       &:hover {
         border-bottom-color: $blue;

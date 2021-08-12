@@ -21,13 +21,18 @@
     max-height: 450px;
     height: 100%;
 
+    @include r ($desktop) {
+      margin-right: 30px;
+    }
+
     @include r ($tablet) {
-      margin-bottom: 50px;
+      margin: 0 0 50px;
     }
   }
 
   &__list {
     max-width: 665px;
+    width: 100%;
   }
 
   &__item:not(:last-child) {
@@ -51,16 +56,8 @@
   &__line {
     background-color: $grey;
     height: 33px;
-    width: 600px;
+    width: 100%;
     position: relative;
-
-    @include r ($desktop) {
-      width: 400px;
-    }
-
-    @include r ($mobile) {
-      width: 250px;
-    }
 
     &:after {
       content: "";
@@ -68,44 +65,19 @@
       left: 0;
       top: 0;
       height: 33px;
-      height: 100%;
       background-color: $blue;
     }
 
     &--first:after {
-      width: 512px;
-
-      @include r ($desktop) {
-        width: 360px;
-      }
-
-      @include r ($mobile) {
-        width: 220px;
-      }
+      width: 83%;
     }
 
     &--second:after {
-      width: 472px;
-
-      @include r ($desktop) {
-        width: 300px;
-      }
-
-      @include r ($mobile) {
-        width: 190px;
-      }
+      width: 70%;
     }
 
     &--third:after {
-      width: 385px;
-
-      @include r ($desktop) {
-        width: 190px;
-      }
-
-      @include r ($mobile) {
-        width: 160px;
-      }
+      width: 60%;
     }
   }
 }

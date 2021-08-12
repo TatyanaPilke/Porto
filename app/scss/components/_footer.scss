@@ -98,7 +98,7 @@
       }
 
       &--telegram {
-        background-image: url(../images.telegram.svg);
+        background-image: url(../images/telegram.svg);
       }
     }
   }
@@ -132,6 +132,8 @@
       width: 100%;
       padding: 13px 75px 13px 15px;
       margin-top: 10px;
+      border-bottom: 1px solid transparent;
+      outline: transparent;
 
       &::placeholder {
         font-size: 14px;
@@ -141,6 +143,22 @@
       &--textarea {
         min-height: 115px;
         margin-bottom: 30px;
+      }
+
+      &:focus {
+        background-color: #f1efef;
+      }
+
+      &:hover {
+        border-color: #c4c4c4;
+      }
+
+      &:hover::placeholder {
+        color: #c4c4cf
+      }
+
+      &:hover {
+        border-color: #c4c4c4;
       }
     }
 
