@@ -1,13 +1,5 @@
 .statistics {
 
-  @include r ($desktop) {
-    padding: 90px 0;
-  }
-
-  @include r ($tablet-large) {
-    padding: 70px 0;
-  }
-
   @include r ($mobile) {
     padding-bottom: 40px;
   }

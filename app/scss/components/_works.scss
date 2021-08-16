@@ -2,14 +2,6 @@
   text-align: center;
   padding-bottom: 140px;
 
-  @include r ($desktop) {
-    padding-bottom: 90px;
-  }
-
-  @include r ($tablet-large) {
-    padding-bottom: 70px;
-  }
-
   &__container {
     flex-wrap: wrap;
     margin-bottom: 15px;
@@ -50,9 +42,6 @@
   }
 
   &__btn {
-    background-color: transparent;
-    border: transparent;
-    outline: transparent;
     font-size: 24px;
     font-weight: 600;
 
@@ -68,8 +57,8 @@
       color: rgb(11, 11, 214);
     }
   }
+}
 
-  .mixitup-control-active {
-    color: $blue;
-  }
+.mixitup-control-active{
+  color: $blue;
 }

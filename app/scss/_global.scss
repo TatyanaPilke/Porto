@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 *,
@@ -43,6 +42,8 @@ select {
   color: inherit;
   cursor: pointer;
   border: transparent;
+  background-color: transparent;
+  outline: transparent;
 }
 
 address {
@@ -58,12 +59,11 @@ body {
   color: $text;
   background-color: #fff;
   min-width: 320px;
-  overflow-x: hidden;
 }
 
 .page {
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
   flex-direction: column;
   min-height: 100vh;
 }
@@ -72,6 +72,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.logo {
+  width: 159px;
+  height: 53px;
 }
 
 .title {
@@ -105,11 +110,8 @@ body {
   margin: 0 auto;
   background-color: $blue;
   color: $white;
-  border: transparent;
-  outline: transparent;
   padding: 10px 25px;
   transition: all 0.3s ease;
-  cursor: pointer;
 
   &:focus {
     box-shadow: 0 0 15px 0 rgba(27, 19, 146, 0.3);
@@ -128,8 +130,16 @@ body {
 .section {
   padding: 140px 0;
 
+  @media (max-width: 1200px) {
+    padding: 90px 0;
+  }
+
   @media (max-width: 992px) {
     text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    padding: 70px 0;
   }
 }
 

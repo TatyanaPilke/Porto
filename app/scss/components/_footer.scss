@@ -52,11 +52,14 @@
     color: $blue;
   }
 
-  &__email {
-    margin-bottom: 20px;
+  &__item {
 
     @include r ($tablet) {
       margin-bottom: 40px;
+    }
+
+    &--margin {
+      margin-bottom: 20px;
     }
   }
 
@@ -66,7 +69,7 @@
     background-color: $footer-bg;
 
     @include r ($tablet) {
-     padding: 30px 0;
+      padding: 30px 0;
     }
   }
 
@@ -77,8 +80,10 @@
       justify-content: center;
     }
 
-    &__icon:not(:last-child) {
-      margin-right: 20px;
+    &__icon {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
     }
 
     &__link {
@@ -93,18 +98,6 @@
       &:hover {
         transform: translateY(-3px);
       }
-
-      &--instagram {
-        background-image: url(../images/instagram.svg);
-      }
-
-      &--facebook {
-        background-image: url(../images/facebook.svg);
-      }
-
-      &--telegram {
-        background-image: url(../images/telegram.svg);
-      }
     }
   }
 
@@ -116,13 +109,9 @@
       margin-bottom: 40px;
       text-align: start;
     }
-     
+
     &__container {
       margin-bottom: 30px;
-    }
-
-    &__label:nth-child(1) {
-      margin-right: 30px;
     }
 
     &__label {
@@ -130,6 +119,10 @@
       flex-direction: column;
       font-size: 14px;
       font-weight: 600;
+
+      &:first-child {
+        margin-right: 30px;
+      }
     }
 
     &__input {
@@ -138,16 +131,15 @@
       padding: 13px 75px 13px 15px;
       margin-top: 10px;
       border-bottom: 1px solid transparent;
-      outline: transparent;
-
-      &::placeholder {
-        font-size: 14px;
-        color: #9C9CAB
-      }
 
       &--textarea {
         min-height: 115px;
         margin-bottom: 30px;
+      }
+
+      &::placeholder {
+        font-size: 14px;
+        color: #9C9CAB
       }
 
       &:focus {

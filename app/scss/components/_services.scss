@@ -1,13 +1,5 @@
 .services {
 
-  @include r ($desktop) {
-    padding: 90px 0;
-  }
-
-  @include r ($tablet-large) {
-    padding: 70px 0;
-  }
-
   &__list {
 
     @include r ($tablet) {

@@ -1,14 +1,6 @@
 .skills {
   background-color: $grey-bg;
 
-  @include r ($desktop) {
-    padding: 90px 0;
-  }
-
-  @include r ($tablet-large) {
-    padding: 70px 0;
-  }
-
   &__inner {
     @include r ($tablet) {
       flex-direction: column;
