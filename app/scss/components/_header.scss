@@ -78,7 +78,18 @@
     transition: color 0.3s ease;
 
     &:hover {
-      color: $blue;
+      text-decoration: underline;
+    }
+
+    &:focus {
+      border: 1px solid $grey;
+      border-radius: 5px;
+    }
+
+    &:active {
+      opacity: 0.7;
+      text-decoration: none;
+      border: none;
     }
 
     &:after {
